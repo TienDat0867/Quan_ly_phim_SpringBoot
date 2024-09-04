@@ -1,0 +1,25 @@
+@charset "UTF-8";
+.cinema-seating {
+  display: grid;
+  grid-template-columns: repeat(15, 1fr); /* 10 ghế trên mỗi hàng */
+  gap: 1px; /* Khoảng cách giữa các ghế */
+  padding-top: 15px;
+}
+
+.seat {
+  width: 30px;
+  height: 30px;
+  background-color: #ccc; /* Màu ghế thường */
+  cursor: pointer;
+}
+.seat a{
+	text-decoration: none;
+	color: inherit;
+}
+.seat.vip {
+  background-color: rgb(244, 52, 11); /* Màu ghế VIP */
+}
+
+.seat.selected {
+  background-color: #6c6; /* Màu ghế khi đã chọn */
+}
